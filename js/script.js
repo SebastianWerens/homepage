@@ -1,10 +1,10 @@
 console.log("Witajcie");
 
-let button = document.querySelector(".button");
-let galleryPhoto = document.querySelector(".galleryPhoto");
-let button2 = document.querySelector(".button2");
-let background = document.querySelector(".background");
-let change = document.querySelector(".website");
+let button = document.querySelector(".headerEnd__button");
+let galleryPhoto = document.querySelector(".js-galleryPhoto");
+let ChangeBackground = document.querySelector(".headerEnd__button--ChangeBackground");
+let background = document.querySelector(".js-changeBackground");
+let change = document.querySelector("body");
 
 button.addEventListener("click", () => {
     switch (button.innerHTML) {
@@ -34,6 +34,6 @@ button.addEventListener("click", () => {
     }
 });
 
-button2.addEventListener("click", () => {
-    change.classList.toggle("background")
-})
+ChangeBackground.addEventListener("click", () => {
+    change.classList.toggle("js-changeBackground")
+});

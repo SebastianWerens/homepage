@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    line-height: 1.5;
+    margin: 0px auto;
+    max-width: 1000px;
+    background-color: rgb(219, 219, 219);
+    transition: 2s;
+}
+
+.js-changeBackground {
+    background-color: rgba(0, 0, 0, 0.534);
+}

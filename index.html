@@ -5,25 +5,33 @@
     <meta charset="utf-8">
     <title>Przewodnik treningu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
 </head>
 
-<body class="website">
-    <header>
-        <h1>Poradnik początkującego siłacza</h1>
+<body>
+    <header class="header">
+        <h1 class="header__title">Poradnik początkującego siłacza</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="#first">Wprowadzenie</a></li>
-            <li><a href="#warmUp">Rozgrzewka</a></li>
-            <li><a href="#training">Ćwiczenia</a></li>
-            <li><a href="#bridge">Zakończenie</a></li>
+        <ul class="nav__list">
+            <li class="nav__listItem">
+                <a class="nav__listItem--link" href="#first">Wprowadzenie</a></li>
+            <li class="nav__listItem">
+                <a class="nav__listItem--link" href="#warmUp">Rozgrzewka</a></li>
+            <li class="nav__listItem">
+                <a class="nav__listItem--link" href="#training">Ćwiczenia</a></li>
+            <li class="nav__listItem">
+                <a class="nav__listItem--link" href="#bridge">Zakończenie</a></li>
         </ul>
+        <a class="nav__goUp" href="#">UP</a>
     </nav>
-    <article>
-        <h2 class="head" id="first">Słowem wstępu</h2>
+    <article class="article">
+        <h2 class="article__header" id="first">Słowem wstępu</h2>
         <strong>Trening na masę</strong> - oparty powinien być na ćwiczeniach podstawowych (przysiady, wyciskania,
         uginania i wyprosty ramion, itp.) z wolnymi ciężarami (sztanga, sztangielki) - ilość serii kształtować się
         powinna
@@ -56,9 +64,9 @@
         sobie osobisty program-adekwatny do indywidualnych predyspozycji organizmu, a zapis ogólny powinien służyć, jako
         podstawa do dalszych prób wypracowania tego programu.
     </article>
-    <h3 class="head" id="warmUp">Rozgrzewka</h3>
-    <article>
-        <i>Jest</i> bardzo istotnym elementem treningu. Zaniedbanie jej lub wykonanie niepoprawnie może być przyczyną
+    <h3 class="article__header" id="warmUp">Rozgrzewka</h3>
+    <article class="article">
+        Jest bardzo istotnym elementem treningu. Zaniedbanie jej lub wykonanie niepoprawnie może być przyczyną
         wielu,
         często niebezpiecznych kontuzji. Każdy trening, nawet lekki powinien być nią poprzedzony. Jak powinna wyglądać
         rozgrzewka? Przede wszystkim powinna obejmować swoim zakresem część ciała, którą będziemy trenować. Jedną ze
@@ -71,77 +79,76 @@
         znajduje się w działach poświęconych treningowi poszczególnych grup mięśniowych. Część trzecia, to rozciąganie
         mięśni. Jej celem jest zwiększenie zakresu ruchomości stawów, wzmocnienie ścięgien, lepsze ukrwienie mięsni.
     </article>
-    <section>
-        <h4 class="head" id="training">Ćwiczenia</h4>
+    <h4 class="article__header" id="training">Ćwiczenia</h4>
+    <section class="container">
         <table class="table">
-            <caption class="caption">Przykładowy trening 3 razy w tygodniu</caption>
+            <caption>Przykładowy trening 3 razy w tygodniu</caption>
             <tr>
-                <td class="tableCell tableHeader" scope="col">Partia</th>
-                <td class="tableCell tableHeader" scope="col">Ćwiczenie</th>
-                <td class="tableCell tableHeader" scope="col">ilość serii <br>(łącznie)</th>
-                <td class="tableCell tableHeader" scope="col">Powtórzenia</th>
+                <th class="table__cell table__cell--header" scope="col">Partia</th>
+                <th class="table__cell table__cell--header" scope="col">Ćwiczenie</th>
+                <th class="table__cell table__cell--header" scope="col">ilość serii <br>(łącznie)</th>
+                <th class="table__cell table__cell--header" scope="col">Powtórzenia</th>
             </tr>
             <tr>
-                <td class="tableCell tableHeader" rowspan="2" scope="row">Klatka</th>
-                <td class="tableCell tableRow">Wyciskanie na ławce</td>
-                <td class="tableCell tableRow" rowspan="2">8</td>
-                <td class="tableCell tableRow" rowspan="2">8-12</td>
+                <th class="table__cell table__cell--header" rowspan="2" scope="row">Klatka</th>
+                <td class="table__cell table__row">Wyciskanie na ławce</td>
+                <td class="table__cell table__row" rowspan="2">8</td>
+                <td class="table__cell table__row" rowspan="2">8-12</td>
             </tr>
             <tr>
-                <td class="tableCell tableRow">Rozpiętki</td>
+                <td class="table__cell table__row">Rozpiętki</td>
             </tr>
             <tr>
-                <td class="tableCell tableHeader" rowspan="2" scope="row">Plecy</th>
-                <td class="tableCell tableRow">Wiosłowanie sztangą</td>
-                <td class="tableCell tableRow" rowspan="2">8</td>
-                <td class="tableCell tableRow" rowspan="2">8-12</td>
+                <th class="table__cell table__cell--header" rowspan="2" scope="row">Plecy</th>
+                <td class="table__cell table__row">Wiosłowanie sztangą</td>
+                <td class="table__cell table__row" rowspan="2">8</td>
+                <td class="table__cell table__row" rowspan="2">8-12</td>
             </tr>
             <tr>
-                <td class="tableCell tableRow">Podciąganie na drążku</td>
+                <td class="table__cell table__row">Podciąganie na drążku</td>
             </tr>
             <tr>
-                <td class="tableCell tableHeader" rowspan="2" scope="row">Nogi</th>
-                <td class="tableCell tableRow">Przysiady ze sztangą</td>
-                <td class="tableCell tableRow" rowspan="2">7</td>
-                <td class="tableCell tableRow" rowspan="2">8-12</td>
+                <th class="table__cell table__cell--header" rowspan="2" scope="row">Nogi</th>
+                <td class="table__cell table__row">Przysiady ze sztangą</td>
+                <td class="table__cell table__row" rowspan="2">7</td>
+                <td class="table__cell table__row" rowspan="2">8-12</td>
             </tr>
             <tr>
-                <td class="tableCell tableRow">Martwy ciąg</td>
+                <td class="table__cell table__row">Martwy ciąg</td>
             </tr>
             <tr>
-                <td class="tableCell tableHeader" rowspan="2" scope="row">Barki</th>
-                <td class="tableCell tableRow">Unoszenie sztangi nad głowę</td>
-                <td class="tableCell tableRow" rowspan="2">6-7</td>
-                <td class="tableCell tableRow" rowspan="2">10-15</td>
+                <th class="table__cell table__cell--header" rowspan="2" scope="row">Barki</th>
+                <td class="table__cell table__row">Unoszenie sztangi nad głowę</td>
+                <td class="table__cell table__row" rowspan="2">6-7</td>
+                <td class="table__cell table__row" rowspan="2">10-15</td>
             </tr>
             <tr>
-                <td class="tableCell tableRow">Unoszenie sztangielek bokiem w górę</td>
+                <td class="table__cell table__row">Unoszenie sztangielek bokiem w górę</td>
             </tr>
             <tr>
-                <td class="tableCell tableHeader" rowspan="2" scope="row">Triceps</th>
-                <td class="tableCell tableRow">Pompki na poręczach</td>
-                <td class="tableCell tableRow" rowspan="2">5-6</td>
-                <td class="tableCell tableRow" rowspan="2">12-15</td>
+                <th class="table__cell table__cell--header" rowspan="2" scope="row">Triceps</th>
+                <td class="table__cell table__row">Pompki na poręczach</td>
+                <td class="table__cell table__row" rowspan="2">5-6</td>
+                <td class="table__cell table__row" rowspan="2">12-15</td>
             </tr>
             <tr>
-                <td class="tableCell tableRow">Prostowanie ramion na wyciągu</td>
+                <td class="table__cell table__row">Prostowanie ramion na wyciągu</td>
             </tr>
             <tr>
-                <td class="tableCell tableHeader" rowspan="2" scope="row">Biceps</th>
-                <td class="tableCell tableRow">Uginanie ramion ze sztangielkami</td>
-                <td class="tableCell tableRow" rowspan="2">5-6</td>
-                <td class="tableCell tableRow" rowspan="2">12-15</td>
+                <th class="table__cell table__cell--header" rowspan="2" scope="row">Biceps</th>
+                <td class="table__cell table__row">Uginanie ramion ze sztangielkami</td>
+                <td class="table__cell table__row" rowspan="2">5-6</td>
+                <td class="table__cell table__row" rowspan="2">12-15</td>
             </tr>
             <tr>
-                <td class="tableCell tableRow">Uginanie ramion na &quot;Modlitewniku&quot;</td>
+                <td class="table__cell table__row">Uginanie ramion na &quot;Modlitewniku&quot;</td>
             </tr>
-
         </table>
 
     </section>
-    <article>
-        <h5 class="head" id="bridge">Na zakończenie</h5>
-        <i>Podsumowując</i>, powyższy plan treninowy jest przykładowy. Każdy powinien dobrać pod siebie ze względu na
+    <article class="article">
+        <h5 class="article__header" id="bridge">Na zakończenie</h5>
+        Podsumowując, powyższy plan treninowy jest przykładowy. Każdy powinien dobrać pod siebie ze względu na
         cel jaki
         chce osiągnąć, staż oraz czas jaki może poświęcić. Sprawa jest jeszcze prostsza z dietą, jeżeli będziecie jeść
         mniej kcal w ciągu doby bądź tygodnia niż wasz organizm &quot;przepala&quot; to najzwyczajniej w świecie
@@ -150,13 +157,13 @@
     </article>
     <header class="headerEnd">
         <p>Na zakończenie parę fotek motywacyjnych:</p>
-        <button class="button">Pokaż zdjęcie</button>
-        <div class="galleryPhoto"></div>
+        <button class="headerEnd__button">Pokaż zdjęcie</button>
+        <!-- This button show image, change text and switches images -->
+        <div class="js-galleryPhoto"></div>
     </header>
-    <a class="goUp" href="#">UP</a>
-    <button class="button button2">Zmień tło</button>
-
-    <footer>All rights reserved</footer>
+    <button class="headerEnd__button headerEnd__button--ChangeBackground">Zmień tło</button>
+    <!-- This button change background -->
+    <footer class="footer">All rights reserved</footer>
 </body>
 
 </html>

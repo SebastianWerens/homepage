@@ -1,0 +1,11 @@
+article {
+    text-align: justify;
+}
+
+.article__header {
+    text-align: center;
+    background-color: rgb(40, 243, 158);
+    border-radius: 20px;
+    font-size: 25px;
+    box-shadow: inset 5px 5px 17px rgba(0, 0, 0, 0.74);
+}
