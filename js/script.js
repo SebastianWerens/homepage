@@ -1,19 +1,10 @@
 {
-    const welcome = () => {
-        console.log("Witajcie");
-
-        welcome();
-    };
-
     const toggleBackground = () => {
         const change = document.querySelector("body");
-        const background = document.querySelector(".js-changeBackground");
         change.classList.toggle("js-changeBackground");
-
     };
 
     const switchImage = () => {
-        const button = document.querySelector(".headerEnd__button");
         const galleryPhoto = document.querySelector(".js-galleryPhoto");
 
         switch (button.innerHTML) {
@@ -42,15 +33,14 @@
                 break;
         }
     };
-    switchImage();
 
     const init = () => {
         const ChangeBackground = document.querySelector(".headerEnd__button--ChangeBackground");
         ChangeBackground.addEventListener("click", toggleBackground);
-        button.addEventListener("click", switchImage, );
+        const button = document.querySelector(".headerEnd__button");
+        button.addEventListener("click", switchImage);
     };
 
     init();
-    toggleBackground();
 
 }
